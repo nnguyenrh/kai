@@ -1,0 +1,82 @@
+/* Your story will use the CSS in this passage to style the page.
+Give this passage more tags, and it will only affect passages with those tags.
+Example selectors: */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Source+Serif+Pro:wght@300&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+@font-face {
+    font-family: 'Jupiter Pro';
+    src: url(JupiterPro.ttf);
+}
+
+tw-sidebar {
+	display: none;
+}
+#ui-bar {
+display:none
+}
+
+html{
+    font-size:150%;
+}
+
+body {
+	/* This affects the entire page */
+	background-color: #ffffff;
+    color: #303030;
+    font-family: 'Roboto Mono', monospace;
+    font-weight:400;
+}
+
+h1 {
+
+    font-family: 'Jupiter Pro',serif;
+    font-size:4em;
+    line-height:150%;
+    font-weight:200;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: 0.20em;
+}
+  
+/* h1:nth-child(1) {
+    color: #d6466a;
+} */
+
+hr {
+    background-color: #fcfcfc;
+}
+
+#story {
+    margin-left: 5em;
+    text-align: justify;
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.passage {
+	/* This only affects passages */
+	font-size:1.2em;
+	line-height:210%;
+    text-align: enter;
+}
+
+.passage a {
+	font-weight:500;
+    background-color: #ff8e0d;
+    color: #fcfcfc;
+    padding:3px;
+	transition: all 0.3s ease-in-out;
+}
+.passage a:hover {
+	/* This affects links while the cursor is over them */
+	background-color: #fcfcfc;
+    color: #ff8e0d;
+	
+}
