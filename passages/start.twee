@@ -1,0 +1,28 @@
+:: StoryData
+{
+    "ifid": "0CFDC108-5540-4832-B873-8C890B6ECB28",
+    "format": "SugarCube",
+    "format-version": "2.36.1",
+    "start": "Start"
+}
+
+:: StoryTitle 
+post credits
+
+:: StoryInit [etc]
+<<set $finished to false>>
+
+:: Start [etc]
+<<nobr>>
+    <<widget "pagination">> 
+    <<set $previouslink to setup.previouspage()>>
+    <<set $nextlink to setup.nextpage()>>
+        <div style="text-align:center;">[[⭠|$previouslink]] [[Menu]] [[🠖|$nextlink]]</div>
+    <</widget>>
+<</nobr>>
+<<fadein 1.5s 3.0s>><h1>post credits</h1><</fadein>>
+<<fadein 1.5s 5.0s>>[[Roll credits?|Page1]]<</fadein>>
+
+
+
+
